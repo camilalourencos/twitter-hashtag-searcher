@@ -1,0 +1,17 @@
+{
+  "name": "twitter-hashtag-searcher",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Camila Lourenco de Souza <camila.lourenco@ibm.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/camilalourencos/twitter-hashtag-searcher",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
