@@ -1,0 +1,14 @@
+body{
+  padding-top: 75px;
+}
+.result-container {
+  margin: 0 33.33% auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  border: 2px black solid;
+  width: 33.33%;
+  height: 300px;
+}
+

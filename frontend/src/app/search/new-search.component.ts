@@ -10,7 +10,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class NewSearchComponent {
 
-  @Output() onSearch = new EventEmitter();
+  @Output() onTyping = new EventEmitter();
 
 
   searchValue: string = '';
@@ -18,7 +18,7 @@ export class NewSearchComponent {
   hashtagSearch(){
     console.log('ola');
     const searchResult = {searchValue: this.searchValue}
-    this.onSearch.emit(searchResult);
+    this.onTyping.emit(searchResult);
 
     this.eraseBar();
 

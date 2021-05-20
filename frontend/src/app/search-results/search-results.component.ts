@@ -1,3 +1,4 @@
+import { SearchResultsService } from './../services/search-results.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 
@@ -8,15 +9,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SearchResultsComponent implements OnInit {
 
-  @Input()  tweetsFound: any[] = [];
-  constructor() { }
+  tweetsFound: any[] = [];
 
-  ngOnInit(): void {
-  }
+  constructor(private service: SearchResultsService) {}
 
-  onSearch($event:any){
-    console.log($event);
-    this.tweetsFound.push($event);
+  ngOnInit() {
+    this.tweetsFound = this.service.tweetsFound;
   }
 
 }

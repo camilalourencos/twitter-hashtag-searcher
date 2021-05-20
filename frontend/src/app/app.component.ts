@@ -1,3 +1,4 @@
+import { SearchResultsService } from './services/search-results.service';
 import { Component } from '@angular/core';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { NewSearchComponent } from './search/new-search.component';
@@ -7,7 +8,13 @@ import { NewSearchComponent } from './search/new-search.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent extends SearchResultsComponent {
+export class AppComponent {
   title = 'twitter-hashtag-searcher';
+
+  constructor(private service: SearchResultsService) {}
+
+  onTyping($event:any){
+    this.service.onSearch($event);
+  }
 
 }
