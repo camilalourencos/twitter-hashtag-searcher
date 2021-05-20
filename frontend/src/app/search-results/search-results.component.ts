@@ -1,13 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-search-results',
   templateUrl: './search-results.component.html',
-  styleUrls: ['./search-results.component.css']
+  styleUrls: ['./search-results.component.css',]
 })
 export class SearchResultsComponent implements OnInit {
 
-  @Input()  tweetFound: any;
+  @Input()  tweetsFound: any[] = [];
   constructor() { }
 
   ngOnInit(): void {
@@ -15,7 +16,7 @@ export class SearchResultsComponent implements OnInit {
 
   onSearch($event:any){
     console.log($event);
-    this.tweetFound = $event.searchValue;
+    this.tweetsFound.push($event);
   }
 
 }

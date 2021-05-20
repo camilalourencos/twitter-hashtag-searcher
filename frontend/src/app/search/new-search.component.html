@@ -1,6 +1,6 @@
 <body>
     <section class="container">
-      <form class="search-container" (ngSubmit)= "hashtagSearch()">
+      <form id="search-container" (ngSubmit)= "hashtagSearch()">
         <div class="search-bar-field">
           <label for="search-bar" id="search-label">Look for the trendest hashtag!</label>
           <input type="text" id="search-bar" placeholder="Search" type="text" [(ngModel)]="searchValue" name="searchValue"/>
