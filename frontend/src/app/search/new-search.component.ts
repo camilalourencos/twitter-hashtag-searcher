@@ -1,6 +1,7 @@
 import { style } from "@angular/animations";
-import { Component } from "@angular/core";
+import { Component, Output, EventEmitter } from "@angular/core";
 import { FormBuilder } from '@angular/forms';
+
 
 @Component({
     selector: 'app-new-search',
@@ -9,15 +10,22 @@ import { FormBuilder } from '@angular/forms';
 })
 export class NewSearchComponent {
 
-  searchValue: string = 'Osório';
-  tweetFound: string = '';
+  @Output() onSearch = new EventEmitter();
 
+
+  searchValue: string = '';
 
   hashtagSearch(){
-    console.log('ola')
-    console.log('Search for', this.searchValue);
-    console.log('This was found', this.tweetFound);
+    console.log('ola');
+    const searchResult = {searchValue: this.searchValue}
+    this.onSearch.emit(searchResult);
 
+    this.eraseBar();
+
+  }
+
+  eraseBar(){
+    this.searchValue = '';
   }
 
 

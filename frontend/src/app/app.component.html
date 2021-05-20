@@ -1,1 +1,3 @@
-<app-new-search></app-new-search>
+<app-new-search (onSearch)='onSearch($event)'></app-new-search>
+<app-search-results [tweetFound]='tweetFound'></app-search-results>
+
