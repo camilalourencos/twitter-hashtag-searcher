@@ -1,0 +1,12 @@
+<body *ngIf="!!tweetsFound; else noTweets">
+
+  <section class="result-container">
+    <div id="returned-tweets" *ngFor='let tweetFound of tweetsFound' >
+      {{tweetFound.searchValue }}<br/>
+    </div>
+  </section>
+
+</body>
+<ng-template #noTweets>
+  <p>No tweets found for this hashtag!</p>
+</ng-template>

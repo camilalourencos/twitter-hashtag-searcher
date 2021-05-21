@@ -1,0 +1,16 @@
+body{
+  padding-top: 75px;
+}
+.result-container {
+  margin: 0 33.33% auto;
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: top;
+  border: 2px black solid;
+  width: 33.33%;
+  height: 300px;
+  white-space: pre-wrap;
+  overflow: scroll;
+}
+
