@@ -14,7 +14,10 @@ export class SearchResultsComponent implements OnInit {
   constructor(private service: SearchResultsService) {}
 
   ngOnInit() {
-    this.tweetsFound = this.service.tweetsFound;
+    this.service.allTweets().subscribe(tweetsFound: Tweet[]) => {
+      console.log(tweetsFound);
+      this.tweetsFound = tweetsFound;
+    }
   }
 
 }

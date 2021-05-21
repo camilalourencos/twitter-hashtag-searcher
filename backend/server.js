@@ -1,5 +1,5 @@
 const getTweets = require('./getTweets');
-
+const http = require('http');
 const express = require('express');
 const app = express();
 
@@ -9,5 +9,6 @@ app.get('/', (req, res)=> {
 
 });
 
-app.listen(8000, () => console.log('ta on'));
+http.createServer(app).listen(8000, () => console.log('ta on'));
+
 
