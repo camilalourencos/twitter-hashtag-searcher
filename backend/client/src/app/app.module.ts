@@ -1,3 +1,5 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { SearchResultsService } from './services/search-results.service';
 import { NewSearchComponent } from './search/new-search.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -5,6 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { SearchResultsComponent } from './search-results/search-results.component';
+
 
 @NgModule({
   declarations: [
@@ -15,8 +18,9 @@ import { SearchResultsComponent } from './search-results/search-results.componen
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [SearchResultsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
