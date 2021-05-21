@@ -1,3 +1,4 @@
+import { RootObject } from './models/new-search.model';
 import { Injectable, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -20,12 +21,13 @@ export class SearchResultsService {
     return this.listTweetsFound;
   }
 
-  allTweets(): Observable<Tweet[]>{
-    return this.httpClient.get<Tweet[]>(this.url);
+  allTweets(): Observable<RootObject[]>{
+    return this.httpClient.get<RootObject[]>(this.url);
   }
 
-  onSearch(tweetFound: any){
-    this.listTweetsFound.push(tweetFound);
+  onSearch(tweetFound: RootObject) : Observable <RootObject> {
+    return this.httpClient.post<RootObject>(this.url, tweetFound);
+
   }
 
 

@@ -1,3 +1,4 @@
+import { RootObject } from './../services/models/new-search.model';
 import { SearchResultsService } from './../services/search-results.service';
 import { Component, OnInit, Input } from '@angular/core';
 
@@ -14,10 +15,9 @@ export class SearchResultsComponent implements OnInit {
   constructor(private service: SearchResultsService) {}
 
   ngOnInit() {
-    this.service.allTweets().subscribe(tweetsFound: Tweet[]) => {
+    this.service.allTweets().subscribe((tweetsFound: RootObject[]) => {
       console.log(tweetsFound);
       this.tweetsFound = tweetsFound;
-    }
+    })
   }
-
 }

@@ -13,9 +13,5 @@ export class AppComponent {
 
   constructor(private service: SearchResultsService) {}
 
-  //calling the event of typing
-  onTyping($event:any){
-    this.service.onSearch($event);
-  }
 
 }
