@@ -31,10 +31,4 @@ export class SearchResultsService {
   }
 
 
-  searchValue: string = '';
-  newSearch($event: any){
-    this.searchValue = $event.searchValue;
-  }
-
-
 }

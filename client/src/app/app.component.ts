@@ -11,9 +11,16 @@ import { NewSearchComponent } from './search/new-search.component';
 export class AppComponent {
   title = 'twitter-hashtag-searcher';
 
-  //constructor(private service: SearchResultsService) {}
+  constructor(private service: SearchResultsService) {
+
+
+  }
+
   searchValue: string = '';
+
   newSearch($event: any){
     this.searchValue = $event.searchValue;
   }
+
+
 }
