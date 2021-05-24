@@ -3,7 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./out",
+    "outDir": "./bin",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
