@@ -1,6 +1,6 @@
 applications :
 - name: "twitter-hashtag-searcher"
-  path : "./client/src/app/app.component.ts"
+  path : "./client/dist/twitter-hashtag-searcher'
   memory : 256M
   buildpack :
   - "https://github.com/camilalourencos/twitter-hashtag-searcher"
