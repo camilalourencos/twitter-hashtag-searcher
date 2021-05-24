@@ -4,6 +4,3 @@
       text: string;
   }
 
-  //export interface RootObject {
-      ///data: Datum[];
-  //}
