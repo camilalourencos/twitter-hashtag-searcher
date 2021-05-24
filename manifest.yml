@@ -3,4 +3,4 @@ applications :
   path : "./dist/twitter-hashtag-searcher'
   memory : 256M
   buildpack :
-  - "https://github.com/camilalourencos/twitter-hashtag-searcher"
+  - staticfile_buildpack
