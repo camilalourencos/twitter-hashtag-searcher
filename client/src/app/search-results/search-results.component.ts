@@ -18,7 +18,7 @@ export class SearchResultsComponent implements OnInit {
     this.service.allTweets().subscribe((tweetsFound: Datum[]) => {
       console.log(tweetsFound);
       this.tweetsFound = tweetsFound;
-      //return tweetsFound;
+
     })
   }
 
