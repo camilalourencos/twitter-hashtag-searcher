@@ -1,6 +1,6 @@
 applications :
 - name: "twitter-hashtag-searcher"
-  path : "./dist/twitter-hashtag-searcher'
+  path : "./dist/twitter-hashtag-searcher"
   memory : 256M
   buildpack :
   - staticfile_buildpack
