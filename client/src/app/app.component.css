@@ -1,0 +1,21 @@
+
+body{
+  padding: 25px 0 25px 0;
+  background-image: url(./background.png);
+}
+
+#maintitle {
+
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: lightgray;
+	margin: 0 10px 0 10px;
+	padding: 55px 0px 6px 0px;
+	font-size: 51px;
+	line-height: 44px;
+	letter-spacing: -2px;
+	font-weight: bolder;
+  text-align: center;
+  height: 100px;
+  background-color: black;
+}
+
