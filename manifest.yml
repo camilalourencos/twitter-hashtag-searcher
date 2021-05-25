@@ -1,7 +1,7 @@
 ---
 applications :
 - name: "twitter-hashtag-searcher"
-  path : "dist/twitter-hashtag-searcher"
+  path : "../twitter-hashtag-searcher/dist/twitter-hashtag-searcher"
   memory : 256M
   buildpack :
   - "https://github.com/cloudfoundry/staticfile-buildpack.git"
